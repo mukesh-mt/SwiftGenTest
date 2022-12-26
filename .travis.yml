@@ -1,0 +1,5 @@
+language:
+  - swift
+osx_image: xcode14.1
+script:
+  - xcodebuild -scheme SwiftLintTest -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=16.1' build
