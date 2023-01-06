@@ -1,3 +1,11 @@
 input_dir: .
 output_dir: ${DERIVED_SOURCES_DIR}
 
+strings:
+  inputs:
+    - Sources/MyLibrary/Resources/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: Strings+generated.swift
+      params:
+        publicAccess: true
